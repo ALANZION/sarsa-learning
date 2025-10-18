@@ -23,6 +23,7 @@ Return the Q-table and the learned policy after completing all episodes.
 ### Name:ALAN ZION H
 ### Register Number:212223240004
 
+```
 def sarsa(env,
           gamma=1.0,
           init_alpha=0.5,
@@ -54,7 +55,9 @@ def sarsa(env,
     V = np.max(Q, axis=1)
     pi = lambda s: {s:a for s, a in enumerate(np.argmax(Q, axis=1))}[s]
     return Q, V, pi, Q_track, pi_track
-    
+
+```
+   
 ## OUTPUT:
 <img width="699" height="605" alt="image" src="https://github.com/user-attachments/assets/c8d90614-8785-44b5-b86f-e02eb203635b" />
 
